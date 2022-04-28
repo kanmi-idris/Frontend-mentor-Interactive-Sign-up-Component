@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-size: cover;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-block: 1.5rem;
+    margin-inline: 3rem;
+  }
+  .typo {
+    text-align: start;
+    grid-row: span 2;
+    padding-right: 3.5rem;
+    margin-top: 2rem;
+  }
+  .header {
+    font-size: 30px;
+  }
+  .info {
+    padding-inline: 0;
+    font-size: 14px;
+  }
+  .trial {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .data-request {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  .data-request form .error-icon {
+    top: -3.5rem;
+    right: -7rem;
+  }
+  .data-request form .error-text {
+    top: -2.5rem;
+    right: -17%;
+  }
+  .data-request form .pass-prompt {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    margin-inline: 6rem;
+  }
+  .header {
+    font-size: 39px;
+  }
+  .typo {
+    padding-right: 9rem;
+  }
+  .data-request form .error-icon {
+    top: -3.5rem;
+    right: -14rem;
+  }
+  .data-request form .error-text {
+    top: -2.5rem;
+    right: -33%;
+  }
+  .data-request form .pass-prompt {
+    right: 0;
+  }
+}
+/*# sourceMappingURL=media.css.map */
