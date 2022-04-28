@@ -1,0 +1,139 @@
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --White: white;
+  --FourWeight: 400;
+  --FiveWeight: 500;
+  --SixWeight: 600;
+  --SevenWeight: 700;
+}
+
+.header {
+  font-size: 30px;
+  font-weight: var(--SixWeight);
+  padding-inline: 0;
+  padding-top: 2.5rem;
+  color: var(--White);
+}
+
+.info {
+  width: 100%;
+  font-size: 17px;
+  padding-inline: .9rem;
+  font-weight: var(--FiveWeight);
+  color: var(--White);
+  line-height: 1.7rem;
+  padding-block: 1.6rem;
+}
+
+.trial {
+  color: var(--White);
+  background-color: var(--Blue);
+  font-size: 17px;
+  font-weight: var(--FiveWeight);
+  padding-block: 1.4rem;
+  border-radius: 10px;
+  width: 100%;
+  padding-inline: 4rem;
+  margin-inline: 0;
+  margin-block: 1.2rem;
+  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.2);
+          box-shadow: 0 7px rgba(62, 60, 73, 0.2);
+}
+
+.trial span {
+  font-weight: var(--SevenWeight);
+}
+
+.data-request {
+  background-color: var(--White);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 7px rgba(62, 60, 73, 0.35);
+          box-shadow: 0 7px rgba(62, 60, 73, 0.35);
+}
+
+.data-request form {
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+.data-request form input {
+  width: 100%;
+  height: 3.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1.9px solid var(--Grayish-Blue);
+  font-size: 15px;
+  font-weight: var(--SevenWeight);
+  padding-left: .8rem;
+}
+
+.data-request form button {
+  background-color: var(--Green);
+  color: var(--White);
+  font-size: 15px;
+  font-weight: var(--SevenWeight);
+  border: 0;
+  outline: 0;
+  padding-block: 1.2rem;
+  width: 100%;
+  border-radius: 8px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 4px #489976;
+          box-shadow: 0 4px #489976;
+  cursor: pointer;
+}
+
+.data-request form button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.data-request form .error-icon {
+  position: relative;
+  top: -3.5rem;
+  right: -7rem;
+  display: none;
+}
+
+.data-request form .error-text {
+  color: var(--Red);
+  position: relative;
+  top: -2.5rem;
+  right: -17%;
+  display: none;
+}
+
+.data-request form .pass-prompt {
+  right: 0;
+}
+
+.data-request .t-and-c {
+  color: var(--Grayish-Blue);
+  font-size: 11px;
+  font-weight: var(--SixWeight);
+  margin-top: .7rem;
+  margin-inline: 1.5rem;
+}
+
+.data-request .t-and-c span {
+  color: var(--Red);
+}
+
+.data-request form.error .error-icon {
+  display: inline-block;
+}
+
+.data-request form.error .error-text {
+  display: block;
+}
+
+.data-request form.error input {
+  border: 2px solid var(--Red);
+}
+/*# sourceMappingURL=layout.css.map */
